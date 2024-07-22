@@ -1,0 +1,19 @@
+type GraphQlModel {
+    id: Int
+    message: String
+    code: Int
+}
+
+input GraphQlModelInput {
+    id: Int
+    message: String
+    code: Int
+}
+
+type Query {
+    getGraphQlModel(id: Int!): GraphQlModel
+}
+
+type Mutation {
+    updateGraphQlModel(input: GraphQlModelInput!): GraphQlModel
+}
