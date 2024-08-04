@@ -54,6 +54,10 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
+tasks.named('bootRun') {
+	mainClass = 'com.swingspringer.practice.Playground.PlaygroundApplication'
 }
+
+//tasks.named('test') {
+//	useJUnitPlatform()
+//}

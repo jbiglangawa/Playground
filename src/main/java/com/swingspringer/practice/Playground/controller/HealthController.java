@@ -21,7 +21,7 @@ public class HealthController {
 
     @GetMapping
     public ResponseEntity<Health> ping() {
-        playgroundKafkaProducer.sendMessage("health", new Date().toString());
+//        playgroundKafkaProducer.sendMessage("health", new Date().toString());
         log.info("Ping");
         return ResponseEntity.ok(new Health(true));
     }
